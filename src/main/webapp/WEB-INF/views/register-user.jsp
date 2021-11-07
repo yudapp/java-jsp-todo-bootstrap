@@ -1,12 +1,12 @@
-<%@ include file="../common/header.jspf"%>
-<title>Login</title>
+ <%@ include file="../common/header.jspf"%>
+<title>Create an account</title>
 </head>
   <body>
-    <form action="/login" method="post">
+    <form action="/register-user" method="post">
       <div class="container">
+    
         <div class="login-elements">
-        <h1>Log in...</h1>
-        <p style="color: red">${errorMessage}</p>
+          <h1> Sign Up</h1>
           <input
             type="text"
             placeholder="Enter Username"
@@ -21,10 +21,8 @@
             required
           />
 
-          <button type="submit">Log In</button>
-          <div class="create-account">
-            Not a member?
-            <a href="/register-user">Create an account</a>
+          <button type="submit">Create Account</button>
+ 
           </div>
         </div>
       </div>
