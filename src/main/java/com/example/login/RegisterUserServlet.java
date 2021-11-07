@@ -8,8 +8,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.example.users.User;
+import com.example.users.UserService;
+
 @WebServlet(urlPatterns = "/register-user")
 public class RegisterUserServlet extends HttpServlet {
+	
+	UserService userService = new UserService();
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -17,6 +22,10 @@ public class RegisterUserServlet extends HttpServlet {
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		String username= request.getParameter("username");
+		String password = request.getParameter("password");
+		userService.addUser(new User(username, password));
 		 response.sendRedirect("/login");
 	}
 }
