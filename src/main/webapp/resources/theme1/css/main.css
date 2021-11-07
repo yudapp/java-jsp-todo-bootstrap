@@ -1,0 +1,83 @@
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+      html {
+        font-size: 62.5%;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        font-size: 1.3rem;
+        margin: 10px;
+        background: linear-gradient(120deg, #2980b9, #44a8ad);
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      a:visited,
+      a:link {
+        color: dodgerblue;
+        text-decoration: none;
+      }
+      a:hover,
+      a:focus {
+        color: rgb(67, 106, 13);
+      }
+
+      button {
+        background-color: #04aa6d;
+        color: white;
+        padding: 14px 20px;
+        margin: 20px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 0.5px solid #3f4140;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+
+      button:focus,
+      input:focus {
+        outline: none !important;
+        border: 0.5px solid #04aa6d;
+        box-shadow: 0 0 10px #719ece;
+      }
+      .container {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        background: white;
+        border-radius: 10px;
+      }
+      .login-elements {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login-elements:first-child {
+        margin-top: 30px;
+      }
+
+      .create-account {
+        display: flex;
+        margin-top: 10px;
+        margin: 10px auto 30px;
+        text-align: center;
+        font-size: 1.1rem;
+      }

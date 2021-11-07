@@ -1,0 +1,13 @@
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Html, CSS, Java, JSP, Jstl" />
+    <meta name="description" content="A simple ToDo app in java" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../resources/theme1/css/normalize.css" />
+ <link href="../resources/theme1/css/main.css" rel="stylesheet">
+ 
