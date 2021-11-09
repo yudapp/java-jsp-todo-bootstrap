@@ -3,7 +3,7 @@
 </head>
   <body>
     <form action="/register-user" method="post">
-      <div class="container">
+      <div class="login-container">
     
         <div class="login-elements">
           <h1> Sign Up</h1>

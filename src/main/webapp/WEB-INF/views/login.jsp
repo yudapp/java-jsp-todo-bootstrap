@@ -3,10 +3,10 @@
 </head>
   <body>
     <form action="/login" method="post">
-      <div class="container">
+      <div class="login-container">
         <div class="login-elements">
         <h1>Log in...</h1>
-        <p style="color: red">${errorMessage}</p>
+        <p class="error-message">${errorMessage}</p>
           <input
             type="text"
             placeholder="Enter Username"
