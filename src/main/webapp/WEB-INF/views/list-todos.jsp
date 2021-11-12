@@ -4,11 +4,11 @@
 </head>
 <body>
 <div class="container">
-<h1> Welcome ${username},</h1>
- 
+<h1> Welcome ${username}</h1>
+ <h3>These are your todos</h3>
 
 	<table class="table table-striped">
-	<caption>Your Todos:</caption>
+ 
 		<thead>
 		<th>Description</th>
 		<th>Category</th>
@@ -19,12 +19,14 @@
 			<tr>
 			<td>${eachTodo.todoName} </td>
 			<td> ${eachTodo.description}</td>
-			<td><a class="btn btn-danger" href="delete-todo?todo=${eachTodo.todoName}&category=${eachTodo.description}">Delete</a></td>
+			<td><a class="btn btn-delete" href="delete-todo?todo=${eachTodo.todoName}&category=${eachTodo.description}">Delete</a></td>
 			</tr>
 		</c:forEach>
 		</tbody>
 	</table>
-
+	<div>
+	<a class="btn btn-add" href="/add-todo">Add a new Todo</a>
+	</div>
 
  
 </div>

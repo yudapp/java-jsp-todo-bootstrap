@@ -6,7 +6,7 @@
       <div class="login-container">
     
         <div class="login-elements">
-          <h1> Sign Up</h1>
+          <h1>Sign up</h1>
           <input
             type="text"
             placeholder="Enter Username"
@@ -21,8 +21,9 @@
             required
           />
 
-          <button type="submit">Create Account</button>
- 
+          <button class="margin-bottom" type="submit">Create Account</button>
+ 		
+ 		
           </div>
         </div>
       </div>

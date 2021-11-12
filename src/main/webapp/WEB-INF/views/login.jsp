@@ -5,7 +5,7 @@
     <form action="/login" method="post">
       <div class="login-container">
         <div class="login-elements">
-        <h1>Log in...</h1>
+        <h1>Sign in</h1>
         <p class="error-message">${errorMessage}</p>
           <input
             type="text"
