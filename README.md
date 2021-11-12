@@ -1,4 +1,4 @@
-# java-jsp-todo-bootstrap
+#todo-app-java-jsp-html-css
 Java todo app using Jsp, Html, CSS
 
 Run as a maven build -
