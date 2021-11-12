@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.example.users.User;
-import com.example.users.UserService;
+import com.example.app.users.User;
+import com.example.app.users.UserService;
 
 @WebServlet(urlPatterns = "/register-user")
 public class RegisterUserServlet extends HttpServlet {

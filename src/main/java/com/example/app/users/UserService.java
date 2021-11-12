@@ -1,4 +1,4 @@
-package com.example.users;
+package com.example.app.users;
 
 import java.util.ArrayList;
 import java.util.List;

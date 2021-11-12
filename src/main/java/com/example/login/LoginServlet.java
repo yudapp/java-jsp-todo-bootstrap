@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.example.users.User;
-import com.example.users.UserService;
+import com.example.app.users.User;
+import com.example.app.users.UserService;
 
 @WebServlet(urlPatterns="/login")
 public class LoginServlet extends HttpServlet{
@@ -29,7 +29,8 @@ public class LoginServlet extends HttpServlet{
 		  String password = request.getParameter("password");
 		 if(userService.isUserValid(new User(username, password))) {
 			 request.getSession().setAttribute("username", username);
-			 response.sendRedirect("/list-todos");
+			 request.getSession().setMaxInactiveInterval(300); //set 5 mins for timeout
+			 response.sendRedirect("/app/list-todos");
 		 } else {
 			 request.setAttribute("errorMessage", "Invalid Credentials!");
 			 request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);

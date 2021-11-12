@@ -12,7 +12,7 @@
 		<thead>
 		<th>Description</th>
 		<th>Category</th>
-		<th>Actions</th>
+		<th>Action</th>
 		</thead>
 		<tbody>
 		<c:forEach items="${todos}" var="eachTodo">
@@ -25,7 +25,7 @@
 		</tbody>
 	</table>
 	<div>
-	<a class="btn btn-add" href="/add-todo">Add a new Todo</a>
+	<a class="btn btn-add" href="/app/add-todo">Add a new Todo</a>
 	</div>
 
  

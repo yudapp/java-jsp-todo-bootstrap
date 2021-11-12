@@ -1,4 +1,4 @@
-package com.example.todo;
+package com.example.app.todo;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,20 +9,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns="/list-todos")
-public class ListTodoServlet extends HttpServlet {
+@WebServlet(urlPatterns="/app/add-todo")
+public class AddTodo extends HttpServlet {
 	
 	TodoService todoService = new TodoService();
+	 
 	protected void doGet( HttpServletRequest request,  HttpServletResponse response)
 			  throws  ServletException, IOException{
-		List<Todo> todos = todoService.retrieveTodo();
-		request.setAttribute("todos", todos);
-		System.out.println(request.getAttribute("description"));
-		request.getRequestDispatcher("/WEB-INF/views/list-todos.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/views/add-todo.jsp").forward(request, response);
 	}
 
 	protected void doPost( HttpServletRequest request,  HttpServletResponse response)
 			  throws  ServletException, IOException{
-		response.sendRedirect("/add-todo");
+		String description = request.getParameter("description");
+		String category = request.getParameter("category");
+		 todoService.addTodo(new Todo(description, category));
+
+		response.sendRedirect("/app/list-todos");
 	}
 }
