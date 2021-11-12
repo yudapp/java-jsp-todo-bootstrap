@@ -1,4 +1,4 @@
 <div class="navbar">
   <a  href="#"><i class="fa fa-fw fa-home"></i>TODOS</a> 
-  <a href="#"><i class="fa fa-fw fa-user"></i> Logout</a>
+  <a href="/app/logout"><i class="fa fa-fw fa-user"></i> Logout</a>
 </div>
